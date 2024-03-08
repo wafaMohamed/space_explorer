@@ -13,10 +13,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
+        scaffoldBackgroundColor: Colors.red,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       home: const SplashScreen(),
     );
   }
+}
+
+class Gradients {
+  static const LinearGradient pink = LinearGradient(
+    colors: [
+      Colors.pink,
+      Colors.purple
+    ], // You can customize the gradient colors here
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
 }
