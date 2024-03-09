@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:space_explorer/core/constant/theme.dart';
 
-import 'feature/ui/splash_screen.dart';
+import 'feature/ui/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,24 +12,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        scaffoldBackgroundColor: Colors.red,
+        scaffoldBackgroundColor: AppTheme.purple1Color,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const SplashScreen(),
+      home: const HomeScreen(),
     );
   }
-}
-
-class Gradients {
-  static const LinearGradient pink = LinearGradient(
-    colors: [
-      Colors.pink,
-      Colors.purple
-    ], // You can customize the gradient colors here
-    begin: Alignment.topLeft,
-    end: Alignment.bottomRight,
-  );
 }

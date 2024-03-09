@@ -23,10 +23,16 @@ class AppTheme {
       GoogleFonts.nunito(fontSize: 15, fontWeight: FontWeight.bold);
   static TextStyle nunitoFont18 =
       GoogleFonts.nunito(fontSize: 18, fontWeight: FontWeight.w900);
+  static TextStyle nunitoFont18Regular =
+      GoogleFonts.nunito(fontSize: 18, fontWeight: FontWeight.normal);
 
   //openSansFont
-  static TextStyle openSansFont = GoogleFonts.openSans(
+  static TextStyle openSansFont22 = GoogleFonts.openSans(
     fontSize: 22,
+    fontWeight: FontWeight.bold,
+  );
+  static TextStyle openSansFont40 = GoogleFonts.openSans(
+    fontSize: 40,
     fontWeight: FontWeight.bold,
   );
 }
