@@ -10,10 +10,10 @@ class ReadMeTextWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20.0),
+      padding: const EdgeInsets.symmetric(horizontal: 4.0),
       child: ReadMoreText(
         text,
-        trimLines: 5,
+        trimLines: 8,
         colorClickableText: AppTheme.pinkColor,
         trimMode: TrimMode.Line,
         trimCollapsedText: 'Show More',

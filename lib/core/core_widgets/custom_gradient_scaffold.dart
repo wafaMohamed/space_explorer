@@ -27,6 +27,10 @@ class CustomGradientScaffold extends StatelessWidget {
         ],
       ),
       body: Container(
+        // container must take max width and height
+        //  you can use double.infinity for both
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             begin: Alignment.topCenter,

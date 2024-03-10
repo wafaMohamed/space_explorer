@@ -60,7 +60,9 @@ class MenuScreen extends StatelessWidget {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const DetailsScreen()));
+                                builder: (context) => DetailsScreen(
+                                      image: list[index],
+                                    )));
                       },
                       child: Image.asset(
                         list[index],
@@ -76,6 +78,3 @@ class MenuScreen extends StatelessWidget {
     );
   }
 }
-/*
-
-  */
